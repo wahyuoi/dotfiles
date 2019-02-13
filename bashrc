@@ -122,3 +122,8 @@ if [ -f ~/.diyrc ]; then
   source ~/.diyrc;
 fi
 
+
+# custom PS1
+if [ -f ~/.bash_prompt ]; then
+  source ~/.bash_prompt;
+fi
