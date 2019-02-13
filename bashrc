@@ -127,3 +127,6 @@ fi
 if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt;
 fi
+
+# append all commands from all terminals to history
+export PROMPT_COMMAND='history -a'
