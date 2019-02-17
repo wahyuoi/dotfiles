@@ -130,3 +130,5 @@ fi
 
 # append all commands from all terminals to history
 export PROMPT_COMMAND='history -a'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
