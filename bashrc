@@ -131,4 +131,9 @@ fi
 # append all commands from all terminals to history
 export PROMPT_COMMAND='history -a'
 
+# enable fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# add timestamp to history
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
