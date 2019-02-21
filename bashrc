@@ -137,3 +137,5 @@ export PROMPT_COMMAND='history -a'
 # add timestamp to history
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
+# default editor
+export EDITOR=vim
