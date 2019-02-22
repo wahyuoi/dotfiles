@@ -139,3 +139,6 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 
 # default editor
 export EDITOR=vim
+
+[ -x "$(command -v kubectl)" ] && source <(kubectl completion bash)
+
