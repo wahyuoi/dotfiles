@@ -1,6 +1,6 @@
 # get current kubectl context
 kubectl_current_context() {
-  [ -x "$(command -v kubectl)" ] && echo [$(kubectl config get-contexts | grep \* | sed 's/  */ /g' - | cut -d ' ' -f3 -)]
+  [ -x "$(command -v kubectl)" ] && echo [$(kubectl config current-context)]
 }
 
 # get current branch in git repo
