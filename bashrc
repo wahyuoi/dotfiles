@@ -142,7 +142,7 @@ export EDITOR=vim
 
 [ -x "$(command -v kubectl)" ] && source <(kubectl completion bash)
 
-export FZF_DEFAULT_OPTS='--height=40% --layout=reverse'
+export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --bind tab:down --bind shift-tab:up --cycle'
 export FZF_DEFAULT_COMMAND='fd --type file'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
