@@ -10,4 +10,9 @@ if [ ! -f ~/.fzf.bash ]; then
   ~/.fzf/install
 fi
 
+if [ ! -x "$(command -v fd)" ]; 
+then
+  wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd_7.3.0_amd64.deb -O /tmp/fd.deb --quiet --show-progress
+  sudo dpkg -i /tmp/fd.deb
+fi
 source ~/.bashrc
