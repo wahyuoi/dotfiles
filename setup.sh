@@ -4,15 +4,4 @@ cp ./bashrc ~/.bashrc
 cp ./bash_aliases ~/.bash_aliases
 cp ./bash_prompt ~/.bash_prompt
 
-# install fzf to improve search 
-if [ ! -f ~/.fzf.bash ]; then
-  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-  ~/.fzf/install
-fi
-
-if [ ! -x "$(command -v fd)" ]; 
-then
-  wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd_7.3.0_amd64.deb -O /tmp/fd.deb --quiet --show-progress
-  sudo dpkg -i /tmp/fd.deb
-fi
 source ~/.bashrc
