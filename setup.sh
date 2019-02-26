@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cp ./bashrc ~/.bashrc
-cp ./bash_aliases ~/.bash_aliases
-cp ./bash_prompt ~/.bash_prompt
+ln -f -P ./bash/bashrc $HOME/.bashrc
+ln -f -P ./bash/bash_aliases $HOME/.bash_aliases
+ln -f -P ./bash/bash_prompt $HOME/.bash_prompt
 
-source ~/.bashrc
+source $HOME/.bashrc
