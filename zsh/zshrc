@@ -96,4 +96,4 @@ fi
 export EDITOR=vim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+[ -f ~/.z_/z.sh ] && source ~/.z_/z.sh
