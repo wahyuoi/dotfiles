@@ -97,3 +97,8 @@ export EDITOR=vim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.z_/z.sh ] && source ~/.z_/z.sh
+
+
+# autocomplete kubectl
+[ -x "$(command -v kubectl)" ] && source <(kubectl completion zsh)
+
