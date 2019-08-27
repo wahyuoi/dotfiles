@@ -2,6 +2,8 @@
 
 # zsh
 sudo apt-get install zsh
+chsh -s $(which zsh)
+
 
 # oh-my-zsh
 curl -L http://install.ohmyz.sh > /tmp/ohmyzsh.sh
