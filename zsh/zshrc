@@ -86,8 +86,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # add golang path
 export GOROOT=$HOME/.software/go
-export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/workspace
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 if [ -f ~/.diyrc ]; then
   source ~/.diyrc;
