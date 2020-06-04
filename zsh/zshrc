@@ -89,6 +89,9 @@ export GOROOT=$HOME/.software/go
 export GOPATH=$HOME/workspace
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# add cargo rust
+export PATH=$PATH:$HOME/.cargo/bin
+
 if [ -f ~/.diyrc ]; then
   source ~/.diyrc;
 fi
