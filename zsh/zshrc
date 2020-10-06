@@ -86,7 +86,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # add golang path
 export GOROOT=$HOME/.software/go
-export GOPATH=$HOME/workspace
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # add cargo rust
@@ -107,6 +107,10 @@ export EDITOR=vim
 [ -x "$(command -v kubectl)" ] && source <(kubectl completion zsh)
 
 
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/kuda/.sdkman"
 [[ -s "/home/kuda/.sdkman/bin/sdkman-init.sh" ]] && source "/home/kuda/.sdkman/bin/sdkman-init.sh"
@@ -114,4 +118,3 @@ export SDKMAN_DIR="/home/kuda/.sdkman"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
