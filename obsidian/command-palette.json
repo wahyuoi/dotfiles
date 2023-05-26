@@ -1,0 +1,7 @@
+{
+  "pinned": [
+    "note-composer:extract-heading",
+    "editor:toggle-source",
+    "markdown:toggle-preview"
+  ]
+}
